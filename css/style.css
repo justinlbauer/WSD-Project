@@ -244,7 +244,6 @@ padding-bottom: 5px;
 /* Mobile Landscape Size to Tablet Portrait */
 @media screen and (min-width: 480px) and (max-width: 767px) {
 	#nav-menu a {
-	background-color: blue;
 	font-size: 2em;
 	}
 	#nav-menu {
@@ -284,7 +283,6 @@ padding-bottom: 5px;
 /* Mobile Portrait Size to Tablet Portrait */
 @media screen and (max-width: 479px) {
 	#nav-menu a {
-	background-color: green;
 	font-size: 1.7em;
 	}
 	#nav-menu {
