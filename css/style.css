@@ -3,12 +3,14 @@
 @import url(http://fonts.googleapis.com/css?family=Share);
 
 body {
-margin: 0px;
+margin: 0px auto;
 padding: 0px;
-font-size: 13px;
+font-size: 81.25%; /* 13 px; */
 background: url('../images/background.jpg'); top left no-repeat;
 background-attachment: fixed;
 color: #FFF;
+max-width: 960px;
+overflow: auto;
 }
 
 h1, h2, h3 {
@@ -16,20 +18,20 @@ font-family: 'Exo';
 }
 
 h2 {
-font-size: 30px;
+font-size: 1.875em; /* 30px */
 line-height: 10px;
 }
 
 
 #wrapper {
-width: 960px;
+width: 100%; /* 960px */
 margin: 0 auto;
 background: rgb(0, 0, 0);
 background: rgba(0, 0, 0, 0.8);
 }
 
 #nav-menu {
-width: 960px;
+width: 100%; /* 960px */
 text-align: right;
 background-color: #c0c0c0;
 height: 24px;
@@ -45,13 +47,13 @@ height: 24px;
 
 #nav-menu li {
 display: inline;
-margin-left: 20px;
+margin-left: 2.083333333333%; /* 20px */
 }
 
 #nav-menu a, a:visited, a:active {
 text-decoration: none;
 background-color: #000;
-font-size: 20px;
+font-size: 1.53846153846154em; /* 20px */
 font-family: 'Share';
 color: #FFF;
 font-weight: bold;
@@ -63,7 +65,7 @@ color: #000;
 }
 
 #header-banner {
-width: 960px;
+width: 100%; /* 960px */
 height: 150px;
 background-color: #000000;
 background-image: url('../images/header_background.jpg');
@@ -72,17 +74,36 @@ border-bottom: 1px solid #FFFFFF;
 
 #header-banner h1 {
 color: #FFF;
-margin-top: 0;
-margin-left: 20px;
+margin-top: 0px;
+margin-left: 2.083333333333%; /* 20px */
 padding-top: 45px;
-font-size: 40px;
+font-size: 3.07692307692308em; /* 40px */
 text-shadow: 1px 1px 2px #0000FF, 2px 2px 2px #FFFFFF;
 }
 
 #content {
-width: 610px;
+width: 63.541666666667%; /* 610px */
 float: left;
-padding: 15px;
+}
+
+#content p {
+padding-left: 2.459016393443%; /* 15px */
+}
+
+#content h2 {
+padding-left: 2.459016393443%; /* 15px */
+}
+
+#content h3 {
+padding-left: 2.459016393443%; /* 15px */
+}
+
+#content dl {
+padding-left: 2.459016393443%; /* 15px */
+}
+
+#content ul {
+padding-left: 2.459016393443%; /* 15px */
 }
 
 #content .lore {
@@ -96,10 +117,46 @@ display: inline;
 margin: 20px;
 }
 
+.in_depth {
+width: 50%;
+margin-bottom: 20px;
+}
+
+.in_depth_photo {
+padding: 0px 8px 0px 5px;
+}
+
+.in_depth th {
+background-color: #d0d0d0;
+color: #0000FF;
+text-transform: uppercase;
+}
+
+.in_depth, .in_depth tr, .in_depth td {
+border: 1px solid #FFFFFF;
+}
+
+.abilities dt {
+font-weight: bold;
+font-size: 1.15em;
+}
+
 #sidebar {
-width: 300px;
+width: 31.25%; /* 300px */
 float: right;
-padding: 10px;
+padding: 10px; /* 10px; */
+}
+
+#sidebar p {
+padding-left: 3.33333333333%; /* 10px */
+}
+
+#sidebar h2 {
+padding-left: 3.33333333333%; /* 10px */
+}
+
+#sidebar ul {
+padding-left: 3.33333333333%; /* 10px */
 }
 
 #calltoaction {
@@ -107,6 +164,7 @@ background: #454545;
 text-align: center;
 padding-bottom: 12px;
 padding-top: 1px;
+padding-left: 3.33333333333%; /* 10px */
 }
 
 #calltoaction h2 {
@@ -123,7 +181,7 @@ text-shadow: 2px 2px 2px #000000;
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
-	font: 14px/100% Arial, Helvetica, sans-serif;
+	font: 1.07692307692308em/100% Arial, Helvetica, sans-serif;
 	padding: .5em 2em .55em;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
 	-webkit-border-radius: .5em; 
@@ -174,15 +232,167 @@ padding: 0px;
 
 #comingsoon li {
 background: url('../images/lolicon.gif') no-repeat left center;
-padding-left: 20px;
+padding-left: 6.666666666667%; /* 20px; */
 margin-left: 5px;
 padding-top: 2px;
 padding-bottom: 2px;
 }
 
+input:focus {
+background-color: #0000FF;
+color: #FFFFFF;
+}
+
+textarea:focus {
+background-color: #0000FF;
+color: #FFFFFF;
+}
+
+input {
+border: 1px solid #FFFFFF;
+background-color: #000000;
+color: #FFFFFF;
+margin: 3px;
+}
+
+textarea {
+border: 1px solid #FFFFFF;
+background-color: #000000;
+color: #FFFFFF;
+margin: 3px;
+}
+
+#formsubmit button {
+background-color: #000000;
+border: 1px solid #FFFFFF;
+color: #FFFFFF;
+width: 30%;
+}
+
 #footer {
-width: 960px;
-padding: 10px;
+width: 100% /* 960px; */
 color: #c0c0c0;
 clear: both;
+}
+
+#footer p {
+padding-left: 1.33333333333%;
+padding-right: 1.33333333333%;
+padding-bottom: 5px;
+}
+
+/* ================================================= */
+/* ================  MEDIA QUERIES ================= */
+/* ================================================= */
+/* Tablet Portrait size to standard */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	#content .lore {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+	}
+	#gallery li {
+	margin: 10px;
+	}
+	#nav-menu a{
+	font-size: 2em;
+	}
+	#nav-menu {
+	text-align: center;
+	}
+	#header-banner {
+	text-align: center;
+	}
+}
+/* Mobile Landscape Size to Tablet Portrait */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	#nav-menu a {
+	font-size: 1.6em;
+	}
+	#nav-menu {
+	text-align: center;
+	}
+	#header-banner {
+	height: 100px;
+	}
+	#header-banner h1 {
+	font-size: 2.27em;
+	}
+	h2 {
+	font-size: 1.57em;
+	line-height: 10px;
+	}
+	.button {
+	margin: 0 1px;
+	font: 1.07692307692308em/100% Arial, Helvetica, sans-serif;
+	padding: .25em 1em .35em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	}
+	#content .lore {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+	}
+	#comingsoon li {
+	background: none;
+	}
+	#comingsoon {
+	list-style: circle;
+	}
+	h3 {
+	font-size: 1em;
+	}
+}
+/* Mobile Portrait Size to Tablet Portrait */
+@media screen and (max-width: 479px) {
+	#nav-menu a {
+	font-size: 1.2em;
+	}
+	#nav-menu {
+	text-align: center;
+	}
+	#header-banner {
+	height: 130px;
+	text-align: center;
+	}
+	#header-banner h1 {
+	font-size: 2.27em;
+	}
+	h2 {
+	font-size: 1.57em;
+	line-height: 10px;
+	text-align: center;
+	padding: 0;
+	}
+	.button {
+	margin: 0 1px;
+	font: 1.5em/100% Arial, Helvetica, sans-serif;
+	padding: .25em 1em .35em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	}
+	#content .lore {
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;
+	}
+	#comingsoon li {
+	background: none;
+	}
+	#comingsoon {
+	margin-left: 25%;
+	list-style: circle;
+	}
+	h3 {
+	font-size: 1em;
+	}
+	#content {
+	float: none;
+	width: 98%;
+	padding: 1%;
+	}
+	#sidebar {
+	float: none;
+	width: 98%;
+	padding: 1%;
+	}
 }
