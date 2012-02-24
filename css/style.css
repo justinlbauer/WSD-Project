@@ -22,7 +22,6 @@ font-size: 1.875em; /* 30px */
 line-height: 10px;
 }
 
-
 #wrapper {
 width: 100%; /* 960px */
 margin: 0 auto;
@@ -120,10 +119,12 @@ margin: 20px;
 .in_depth {
 width: 50%;
 margin-bottom: 20px;
+margin-left: 25%;
 }
 
 .in_depth_photo {
 padding: 0px 8px 0px 5px;
+float: left;
 }
 
 .in_depth th {
